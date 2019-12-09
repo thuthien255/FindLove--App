@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>findlove</title>
+    <link rel="shortcut icon" href="/img/system/G.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/news.css">
+    <link rel="stylesheet" href="/css/jquery-ui.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<body>
+    <form action="/findlove/addpost" enctype="multipart/form-data" method="post" style="width:30%; margin-left:35%; margin-top:2%;" >
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Status</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="status" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlFile1">Ảnh</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img">
+        </div>
+        <button type="submit" class="btn btn-primary">Thêm Bài Viết</button>
+    </form>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-6">
+                <% listpost && listpost.length>0 && listpost.forEach(item=>{%>
+                    <div class='row' style="margin-top:3rem">
+                        <div class="col-md-3">
+                            <h1><%=item.status%></h1>
+                            <img src="/storeImg/<%=item.img%>" style="height:6rem;width: 8rem;" alt="">
+                            <h6><%=item.heart%></h6>
+                            <a href="/findlove/deletepost/<%=item._id%>">
+                                <button type="button" class="btn btn-danger" style="float:left; margin-right:1rem" >Xóa Bài Viết</button>
+                            </a> 
+                        </div>
+                    </div>
+                    <hr>
+                <%})%>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/news.client.js"></script>
+    <script src="/js/jquery-ui.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>findlove</title>
+    <link rel="shortcut icon" href="/img/system/G.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/jquery-ui.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<body>
+    <div class=" header">
+        <div class=" row">
+            <div class="col-md-2">
+                <h1 class="logoFindLove">FindLove</h1>
+            </div>
+            <div class="col-md-4 search">
+                <form action="/findlove/search" method="post">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Tìm Kiếm" aria-label="Recipient's username" aria-describedby="basic-addon2" name="search" />
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="submit" style="background-color:lightgray"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <nav class="navbar navbar-expand-lg navbar-light " style="height:78%">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <img src="/<%=userIsLoginning.avata%>" class="avata" alt=""/>
+                            </li>
+                            <li class="nav-item">
+                                <h5 class="username">Dương</h5>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link"   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-user-friends icon customicon"></i>
+                                </a>
+                                <div class="dropdown-menu customMenuChild" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item customtagamenuchild">
+                                        <img src="https://vnreview.vn/image/17/59/70/1759707.jpg" class="avataAddFriend" alt=""/>
+                                        <h6 style="margin-top:1rem;float:left">Vũ Văn Thanh</h6>
+                                        <button type="button" class="btn btn-primary" style="margin-left:4rem;margin-top:0.5rem">Xác Nhận</button>
+                                        <button type="button" class="btn btn-danger" style="margin-left:0.5rem;margin-top:0.5rem">Xóa</button>
+                                    </a>
+                                    <a class="dropdown-item customtagamenuchild">
+                                        <img src="https://vnreview.vn/image/17/59/70/1759707.jpg" class="avataAddFriend" alt=""/>
+                                        <h6 style="margin-top:1rem;float:left">Vũ Văn Thanh</h6>
+                                        <button type="button" class="btn btn-primary" style="margin-left:4rem;margin-top:0.5rem">Xác Nhận</button>
+                                        <button type="button" class="btn btn-danger" style="margin-left:0.5rem;margin-top:0.5rem">Xóa</button>
+                                    </a>
+                                    <a class="dropdown-item customtagamenuchild">
+                                        <img src="https://vnreview.vn/image/17/59/70/1759707.jpg" class="avataAddFriend" alt=""/>
+                                        <h6 style="margin-top:1rem;float:left">Vũ Văn Thanh</h6>
+                                        <button type="button" class="btn btn-primary" style="margin-left:4rem;margin-top:0.5rem">Xác Nhận</button>
+                                        <button type="button" class="btn btn-danger" style="margin-left:0.5rem;margin-top:0.5rem">Xóa</button>
+                                    </a>
+                                    <a class="dropdown-item customtagamenuchild">
+                                        <img src="https://vnreview.vn/image/17/59/70/1759707.jpg" class="avataAddFriend" alt=""/>
+                                        <h6 style="margin-top:1rem;float:left">Vũ Văn Thanh</h6>
+                                        <button type="button" class="btn btn-primary" style="margin-left:4rem;margin-top:0.5rem">Xác Nhận</button>
+                                        <button type="button" class="btn btn-danger" style="margin-left:0.5rem;margin-top:0.5rem">Xóa</button>
+                                    </a>
+                                    <a class="dropdown-item customtagamenuchild">
+                                        <img src="https://vnreview.vn/image/17/59/70/1759707.jpg" class="avataAddFriend" alt=""/>
+                                        <h6 style="margin-top:1rem;float:left">Vũ Văn Thanh</h6>
+                                        <button type="button" class="btn btn-primary" style="margin-left:4rem;margin-top:0.5rem">Xác Nhận</button>
+                                        <button type="button" class="btn btn-danger" style="margin-left:0.5rem;margin-top:0.5rem">Xóa</button>
+                                    </a>
+                                    <a class="dropdown-item customtagamenuchild">
+                                        <img src="https://vnreview.vn/image/17/59/70/1759707.jpg" class="avataAddFriend" alt=""/>
+                                        <h6 style="margin-top:1rem;float:left">Vũ Văn Thanh</h6>
+                                        <button type="button" class="btn btn-primary" style="margin-left:4rem;margin-top:0.5rem">Xác Nhận</button>
+                                        <button type="button" class="btn btn-danger" style="margin-left:0.5rem;margin-top:0.5rem">Xóa</button>
+                                    </a>
+                                    <a class="dropdown-item customtagamenuchild">
+                                        <img src="https://vnreview.vn/image/17/59/70/1759707.jpg" class="avataAddFriend" alt=""/>
+                                        <h6 style="margin-top:1rem;float:left">Vũ Văn Thanh</h6>
+                                        <button type="button" class="btn btn-primary" style="margin-left:4rem;margin-top:0.5rem">Xác Nhận</button>
+                                        <button type="button" class="btn btn-danger" style="margin-left:0.5rem;margin-top:0.5rem">Xóa</button>
+                                    </a>
+                                    <a class="dropdown-item customtagamenuchild">
+                                        <img src="https://vnreview.vn/image/17/59/70/1759707.jpg" class="avataAddFriend" alt=""/>
+                                        <h6 style="margin-top:1rem;float:left">Vũ Văn Thanh</h6>
+                                        <button type="button" class="btn btn-primary" style="margin-left:4rem;margin-top:0.5rem">Xác Nhận</button>
+                                        <button type="button" class="btn btn-danger" style="margin-left:0.5rem;margin-top:0.5rem">Xóa</button>
+                                    </a>
+                                    <a class="dropdown-item customtagamenuchild">
+                                        <img src="https://vnreview.vn/image/17/59/70/1759707.jpg" class="avataAddFriend" alt=""/>
+                                        <h6 style="margin-top:1rem;float:left">Vũ Văn Thanh</h6>
+                                        <button type="button" class="btn btn-primary" style="margin-left:4rem;margin-top:0.5rem">Xác Nhận</button>
+                                        <button type="button" class="btn btn-danger" style="margin-left:0.5rem;margin-top:0.5rem">Xóa</button>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-comments icon customicon"></i>
+                                </a>
+                                <div class="dropdown-menu customMenuChild" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item customtagamenuchild">
+                                        <img src="https://vnreview.vn/image/17/59/70/1759707.jpg" class="avataAddFriend" alt=""/>
+                                        <h6>Vũ Văn Thanh</h6>
+                                        <a>bạn có ở nhà hk</a>
+                                    </a>
+                                    <a class="dropdown-item customtagamenuchild">
+                                        <img src="https://vnreview.vn/image/17/59/70/1759707.jpg" class="avataAddFriend" alt=""/>
+                                        <h6>Vũ Văn Thanh</h6>
+                                        <a>bạn có ở nhà hk</a>
+                                    </a>
+                                    <a class="dropdown-item customtagamenuchild">
+                                        <img src="https://vnreview.vn/image/17/59/70/1759707.jpg" class="avataAddFriend" alt=""/>
+                                        <h6>Vũ Văn Thanh</h6>
+                                        <a>bạn có ở nhà hk</a>
+                                    </a>
+                                    <a class="dropdown-item customtagamenuchild">
+                                        <img src="https://vnreview.vn/image/17/59/70/1759707.jpg" class="avataAddFriend" alt=""/>
+                                        <h6>Vũ Văn Thanh</h6>
+                                        <a>bạn có ở nhà hk</a>
+                                    </a>
+                                    <a class="dropdown-item customtagamenuchild">
+                                        <img src="https://vnreview.vn/image/17/59/70/1759707.jpg" class="avataAddFriend" alt=""/>
+                                        <h6>Vũ Văn Thanh</h6>
+                                        <a>bạn có ở nhà hk</a>
+                                    </a>
+                                    <a class="dropdown-item customtagamenuchild">
+                                        <img src="https://vnreview.vn/image/17/59/70/1759707.jpg" class="avataAddFriend" alt=""/>
+                                        <h6>Vũ Văn Thanh</h6>
+                                        <a>bạn có ở nhà hk</a>
+                                    </a>
+                                    <a class="dropdown-item customtagamenuchild">
+                                        <img src="https://vnreview.vn/image/17/59/70/1759707.jpg" class="avataAddFriend" alt=""/>
+                                        <h6>Vũ Văn Thanh</h6>
+                                        <a>bạn có ở nhà hk</a>
+                                    </a>
+                                    <a class="dropdown-item customtagamenuchild">
+                                        <img src="https://vnreview.vn/image/17/59/70/1759707.jpg" class="avataAddFriend" alt=""/>
+                                        <h6>Vũ Văn Thanh</h6>
+                                        <a>bạn có ở nhà hk</a>
+                                    </a>
+                                    <a class="dropdown-item customtagamenuchild">
+                                        <img src="https://vnreview.vn/image/17/59/70/1759707.jpg" class="avataAddFriend" alt=""/>
+                                        <h6>Vũ Văn Thanh</h6>
+                                        <a>bạn có ở nhà hk</a>  
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fas fa-sign-out-alt icon"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div> 
+    <div class="row">
+        <div class="col-md-10">
+            <div class="infoUser">
+                <div class="row">
+                    <div class="imgUser">
+                        <img src="/<%=userIsLoginning.coverImg%>" class="coverImage" alt=""/>
+                        <img src="/<%=userIsLoginning.avata%>" class="avataUser" alt=""/>
+                        <h1 class="usernameUser"><%=userIsLoginning.userName%></h1>
+                        <ul class="list-inline ">
+                            <li class="list-inline-item">Bạn Bè</li>
+                            <li class="list-inline-item">Ảnh</li>
+                        </ul>
+                        <form action="/findlove/home/updateimgcover" enctype="multipart/form-data" method="post">
+                            <div class="input-group updateimgcover">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile01" name="updateImgCover">
+                                    <label class="custom-file-label" for="inputGroupFile01">Ảnh Bìa</label>
+                                  </div>
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-primary">Cập Nhật</button>
+                                </div>
+                            </div>
+                        </form>
+                        <form action="/findlove/home/updateavata"  enctype="multipart/form-data" method="post">
+                            <div class="input-group updateavata">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile01" name="updateAvata">
+                                    <label class="custom-file-label" for="inputGroupFile01">Ảnh Avata</label>
+                                  </div>
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-primary">Cập Nhật</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="card moreInfo">
+                            <h4 style="text-align:center"><%=userIsLoginning.name%></h4>
+                            <h6 style="text-align:center">23 - Tp.Hồ Chí Minh</h6>
+                        </div>
+                        <div class="card moreInfo">
+                            <h4 style="text-align:center">Tôi là người như thế nào</h4>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a class="textMoreInfo"><%=info.introduce%></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card moreInfo">
+                            <h4 style="text-align:center">Thông tin cơ bản</h4>
+                            <ul class="list-group">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <li class="list-group-item">
+                                            <h6>Chiều cao</h6>
+                                            <a class="textMoreInfo"><%=info.height%></a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h6>Nơi đang sống</h6>
+                                            <a class="textMoreInfo"><%=info.dress%></a>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <li class="list-group-item">
+                                            <h6>Cân Nặng</h6>
+                                            <a class="textMoreInfo"><%=info.weight%></a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h6>Quê quán</h6>
+                                            <a class="textMoreInfo"><%=info.homeTown%></a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="card moreInfo">
+                            <h4 style="text-align:center">Học vấn - nghề nghiệp</h4>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h6>Học vấn</h6>
+                                    <p><%=info.school%></p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>Nghề nghiệp</h6>
+                                    <p><%=info.job%></p>
+                                </li>
+                                <li class="list-group-item">
+                                        <h6>Thu nhập hàng tháng</h6>
+                                        <p><%=info.salary%></p>
+                                    </li>
+                            </ul>
+                        </div>
+                        <div class="card moreInfo">
+                            <h4 style="text-align:center">Quan điểm - phong cách sống</h4>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h6>Sở thích</h6>
+                                    <p><%=info.hobby%></p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>Quan điểm về tình yêu</h6>
+                                    <p><%=info.viewOfLove%></p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>Mẫu người muốn tìm</h6>
+                                    <p><%=info.kindOfLover%></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <% listpost && listpost.length>0 && listpost.forEach(item=>{ %>
+                            <div class="row">
+                                <div class="card mb-3 post" style="margin-top:3rem">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <img src="/<%=userIsLoginning.avata%>" class="avataPost" alt=""/>
+                                            <h5 class="UsernamePost"><%=userIsLoginning.name%>
+                                            </h5>
+                                        </h5>
+                                        <p class="card-text" style="margin-bottom:0rem !important">
+                                            <%=item.status%>
+                                        </p>
+                                    </div>
+                                    <% if(item.file == 'video/mp4'){ %>
+                                        <video controls>
+                                            <source src="../storeImg/<%=item.img%>">
+                                        </video>
+                                    <% } else if(item.file == 'audio/mp3'){ %>
+                                        <audio controls="controls">
+                                            <source src="../storeImg/EmOiLenPhoAndyRemix-MinhVuongM4U-6132880.mp3" type="audio/mp3">
+                                        </audio>
+                                    <% }else {%>
+                                        <img src="/<%=item.img%>" style="height:6rem;width: 8rem;" alt="">
+                                    <% } %>
+                                </div>
+                            </div> 
+                        <% }) %>
+                        <ListPost username='Công Phượng' status='Hôm Nay là một ngày tươi đẹp'  picture='https://znews-photo.zadn.vn/w1024/Uploaded/aopuoax/2018_11_16/3_zing.jpg' avata='http://a9.vietbao.vn/images/vn899/150/2019/06/20190607-doi-hinh-viet-nam-vs-curacao-tuan-anh-cong-phuong-da-chinh-1.jpg'/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/news.client.js"></script>
+    <script src="/js/jquery-ui.js"></script>
+</body>
+
+</html>

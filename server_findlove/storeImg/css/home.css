@@ -1,0 +1,192 @@
+.header{
+    width:100% !important;
+    height:4rem;
+    background-color: #FF69B4;
+    position: fixed;
+    z-index: 100;
+    margin-top:-2rem !important;
+}
+.logoFindLove{
+    color:white;
+    margin-top:1rem;
+    float:right;
+}
+.search{
+    padding-top:1.5rem;
+}
+.avata{
+    margin-top:0.5rem;
+    margin-left:4rem;
+    height:3rem;
+    width:3rem;
+    border-radius: 100%;
+}
+.username{
+    margin-left:2rem;
+    margin-top:1.3rem;
+    color:white;
+}
+.icon{
+    margin-left:2rem;
+    margin-top:1.5rem;
+    color:white;
+    font-size: 1.5rem;
+}
+.customicon{
+    margin-top:0.8rem;
+}
+.listMessager{
+    width:20rem;
+    height:30rem;
+    background-color: red;
+    margin-top:2rem;
+}
+.menuParents{
+    position: relative;
+    z-index: 1;
+}
+.menuitem{
+    position: absolute;
+    z-index: 2;
+}
+.customMenuChild{
+    width:26rem;
+    height:40rem;
+    margin-left:-10rem;
+    overflow:scroll;
+}
+.avataAddFriend{
+    height:3rem;
+    width:3rem;
+    margin-top:0.1rem;
+    float:left;
+    margin-right: 1rem;
+    margin-left:-1rem !important;
+    border-radius: 100%;
+}
+.customtagamenuchild{
+    height:4rem;
+    border-bottom: 1px solid lightgray !important;
+}
+.customtagamenuchild a{
+    font-size: 0.8rem;
+    margin-top: -0.5rem;
+}
+body{
+    padding-top: 2rem;
+    background-color: lightgray;
+}
+.infoUser{
+    width:80%;
+    margin-left:20%;
+}
+.imgUser{
+    width:100%;
+    height:28rem;
+    border:1px solid lightgray;
+    margin-top:3rem;
+    border-radius: 10px 10px;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+}
+.coverImage{
+    width:100%;
+    height:100%;
+    position: absolute;
+    z-index: 2;
+    border-radius: 10px 10px 0px 0px;
+}
+.avataUser{
+    width:11rem;
+    height:11rem;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 4;
+    border: 2px solid white;
+    margin-top:16rem;
+    margin-left:3rem;
+}
+.usernameUser{
+    position: absolute;
+    z-index: 3;
+    color:white;
+    margin-top:20rem;
+    margin-left:15rem;
+    text-shadow: 2px 2px black;
+}
+.imgUser ul{
+    position: absolute;
+    z-index: 3;
+    width:100%;
+    height:3rem;
+    background-color: white;
+    margin-top:25rem;
+    padding-left:15rem;
+    padding-top:0.7rem;
+}
+.imgUser ul li{
+    margin-left:1rem;
+    width:5rem;
+    border-left: 1px solid lightgray;
+    padding-left:1rem;
+}
+.status{
+    width:27rem;
+}
+.moreInfo{
+    width:100%;
+    background-color: white;
+    margin-left:-1rem;
+    border-radius: 10px 10px;
+    margin-top:3rem;
+    padding-top:1rem;
+}
+.moreInfo ul li {
+    border:none;
+}
+.iconMoreInfo{
+    height:3rem;
+    width:3rem;
+    float:left;
+    margin-right:2rem;
+}
+.textMoreInfo{
+    font-size: 0.8rem;
+}
+.rightPage{
+    margin-left:6%;
+    width:16% !important;
+    height:30rem;
+    margin-top:3rem;
+    position: fixed;
+}
+.avataPost{
+    width:2.5rem;
+    height:2.5rem;
+    border-radius: 100%;
+    float:left;
+    margin-right:2rem;
+}
+.UsernamePost{
+    padding-top:0.5rem;
+    margin-left:2rem !important;
+}
+.imgPost{
+    width:100%;
+    height:100%;
+    border-radius: 0px 0px 10px 10px;
+}
+.updateimgcover{
+    position: absolute;
+    width:20rem !important;
+    margin-left:2rem;
+    margin-top:2rem;
+    z-index: 10;
+}
+.updateavata{
+    position: absolute;
+    z-index: 12;
+    width:16rem !important;
+    margin-top:20.9rem;
+}

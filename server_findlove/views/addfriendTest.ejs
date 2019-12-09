@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kết bạn</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4" style="margin-top:2rem;margin-left:2rem">
+                <img src="/<%=userlogin.avata%>" style="height: 3rem; width: 3rem; border-radius: 100%;float:left; margin-right:1rem" alt="">
+                <h6 style="margin-top:1rem"><%=userlogin.name%></h6>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+        <div class="row" style="margin-top:3rem">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                      Gợi Ý Kết Bạn
+                    </div>
+                    <div class="card-body">
+                        <% listUser && listUser.length>0 && listUser.forEach(item=>{ %>
+                            <div class="row" style="border-bottom:1px solid lightgray; padding-bottom:1rem; margin-top:1rem">
+                                <div class="col-md-2">
+                                    <img src="/<%=item.avata%>" style="height:3rem; width:3rem; border-radius: 100%;" alt="">
+                                </div>
+                                <div class="col-md-5">
+                                    <p><%=item.name%></p>
+                                </div>
+                                <div class="col-md-5">
+                                    <a href="/findlove/sentAddfriend/<%=item._id%>">
+                                        <button type="button" class="btn btn-primary" style="float:left !important"> Gửi kết bạn</button>
+                                    </a>                             
+                                </div>
+                            </div>
+                        <% }) %>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                      Lời Mời Kết Bạn
+                    </div>
+                    <div class="card-body">
+                        <% listUserWaitAcept && listUserWaitAcept.length>0 && listUserWaitAcept.forEach(item=>{ %>
+                            <div class="row" style="border-bottom:1px solid lightgray; padding-bottom:1rem; margin-top:1rem">
+                                <div class="col-md-2">
+                                    <img src="/<%=item.avata%>" style="height:3rem; width:3rem; border-radius: 100%;" alt="">
+                                </div>
+                                <div class="col-md-5">
+                                    <p><%=item.name%></p>
+                                </div>
+                                <div class="col-md-5">
+                                    <a href="/findlove/aceptaddfriend/<%=item._id%>">
+                                        <button type="button" class="btn btn-primary" style="float:left !important"> Chấp Nhận</button>
+                                    </a>   
+                                    <a href="/findlove/removeAddFriend/<%=item._id%>">
+                                        <button type="button" class="btn btn-danger">Xóa Yêu Cầu</button>
+                                    </a>                 
+                                </div>
+                            </div>
+                        <% }) %>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                      Danh Sách Bạn Bè
+                    </div>
+                    <div class="card-body">
+                        <% listFriend && listFriend.length>0 && listFriend.forEach(item=>{ %>
+                            <div class="row" style="border-bottom:1px solid lightgray; padding-bottom:1rem; margin-top:1rem">
+                                <div class="col-md-2">
+                                    <img src="<%=item.avatar%>" style="height:3rem; width:3rem; border-radius: 100%;" alt="">
+                                </div>
+                                <div class="col-md-5">
+                                    <p><%=item.username%></p>
+                                </div>
+                                <div class="col-md-5">
+                                    <a href="/findlove/unfriend/<%=item._id%>">
+                                        <button type="button" class="btn btn-danger">Xóa Bạn</button>
+                                    </a>
+                                </div>
+                            </div>
+                        <% }) %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
